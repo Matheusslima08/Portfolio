@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - @_appSettings.AppName</title>
     <script type="importmap"></script>
-    <!--#region Css-->
+   
     <link rel="stylesheet" href="~/css/Skins/@skin" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AppUI.styles.css" asp-append-version="true" />
@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/datatables.net-dt/css/datatables.datatables.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/sweetalert2/sweetalert2.css" asp-append-version="true" />
-    <!--#endregion Css-->
-    <!--#region Scripts-->
+    
     <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
     <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
     <script src="~/lib/bootstrap/js/bootstrap.js" asp-append-version="true"></script>
@@ -30,7 +29,7 @@
     <script src="~/lib/datatables.net-dt/js/datatables.datatables.js" asp-append-version="true"></script>
     <script src="~/lib/sweetalert2/sweetalert2.js" asp-append-version="true"></script>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-    <!--#endregion Scripts-->
+    
 </head>
 <body>
     <header>
@@ -57,6 +56,37 @@
     <div class="container">
         <main role="main" class="pb-3">
             <div id="toast-container"></div>
+
+            
+            <section class="portfolio-section">
+                <div class="text-center mb-4">
+                    <h1 class="display-4">Matheus Vinicius de Lima</h1>
+                    <p class="lead">Desenvolvedor Full Stack</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Formação Acadêmica</h2>
+                    <p><strong>Bacharelado em Ciência da Computação</strong> - UNIFG, 2023.</p>
+                    <p>Foco em fundamentos de computação e aprendizado prático de diversas linguagens de programação.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li><strong>Front-end:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Back-end:</strong> C#, .NET, Entity Framework</li>
+                        <li><strong>Bancos de Dados:</strong> SQL Server, MySQL</li>
+                        <li><strong>Conteinerização:</strong> Docker</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Contato</h2>
+                    <p><strong>Email:</strong> <a href="mailto:Matheusslima0802@gmail.com">Matheusslima0802@gmail.com</a></p>
+                    <p><strong>Telefone:</strong> (81) 98666-2560</p>
+                </div>
+            </section>
+
             @RenderBody()
         </main>
     </div>

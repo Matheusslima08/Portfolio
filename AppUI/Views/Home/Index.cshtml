@@ -1,8 +1,113 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Meu Portfólio</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <a href="resume.pdf" target="_blank" class="resume-btn">Baixar Currículo</a>
+        </nav>
+    </header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @_appSettings.AppName</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Seção de Introdução -->
+    <section id="experience" class="experience-section">
+        <h2>Experiência Profissional</h2>
+
+        <div class="experience-item">
+            <h3>Prefeitura do Recife</h3>
+            <span>Estagiário de TI | 04/2022 - 08/2022</span>
+            <p>
+                Desenvolvedor Front End atuando na elaboração de landing pages de sites dos clientes.
+                Realização de otimização da interface, atualização de conteúdo e manutenção de websites.
+            </p>
+            <p>
+                Contribuí na melhoria contínua da área de TI, criando e mantendo documentação técnica
+                e realizando manutenções preventivas/corretivas em equipamentos.
+            </p>
+        </div>
+
+        <div class="experience-item">
+            <h3>Jupiter Consultoria</h3>
+            <span>Freelancer | 02/2021 - 11/2021</span>
+            <p>
+                Atuei como desenvolvedor freelancer, contribuindo com soluções tecnológicas para pequenos negócios,
+                desde o planejamento até a entrega de projetos customizados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="portfolio-section">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>xxxxxxxxxxxxxxxxxxxxxxxx.</p>
+        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="portfolio-section">
+        <h2 class="section-title">Habilidades</h2>
+        <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>HTML5 & CSS3</li>
+            <li>TypeScript</li>
+            <li>Git & GitHub</li>
+            <li>Bootstrap</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="portfolio-section">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="img/project1.jpg" alt="Projeto 1">
+                <h3>Projeto 1: [Nome do Projeto]</h3>
+                <p>Descrição breve do projeto, as tecnologias usadas e o objetivo do projeto.</p>
+                <a href="https://github.com/seu-repositorio" target="_blank">Ver no GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="img/project2.jpg" alt="Projeto 2">
+                <h3>Projeto 2: [Nome do Projeto]</h3>
+                <p>Descrição breve do projeto, as tecnologias usadas e o objetivo do projeto.</p>
+                <a href="https://github.com/seu-repositorio" target="_blank">Ver no GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="portfolio-section">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p>Está interessado em trabalhar comigo ou quer conversar? Sinta-se à vontade para me contatar!</p>
+        <form action="https://formspree.io/f/seu-email" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Meu Portfólio | Criado por [Seu Nome]</p>
+        <p><a href="#intro">Voltar ao topo</a></p>
+    </footer>
+</body>
+</html>
