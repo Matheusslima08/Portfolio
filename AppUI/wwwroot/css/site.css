@@ -232,3 +232,94 @@ footer {
 .portfolio-section {
     animation: fadeIn 1s ease-in-out;
 }
+
+/* Menu Responsivo */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+    .menu-toggle span {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+    }
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ScrollReveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+/* Botão "Voltar ao Topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+    .back-to-top.show {
+        display: block;
+        opacity: 1;
+    }
+
+.navbar {
+    background-color: #1e1e1e; /* Fundo escuro */
+    border-bottom: 1px solid #333; /* Linha sutil para separar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+}
+
+.navbar-brand {
+    color: #4aa1f3; /* Azul claro para destaque */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto mais forte */
+    text-transform: uppercase; /* Coloca o texto em letras maiúsculas */
+    padding: 10px 15px; /* Espaçamento interno */
+}
+
+    .navbar-brand:hover {
+        color: #ffffff; /* Branco ao passar o mouse */
+        text-decoration: none; /* Remove sublinhado */
+    }
+
+.navbar-nav .nav-link {
+    color: #d1d1d1; /* Cinza claro para os links */
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #4aa1f3; /* Azul claro ao passar o mouse */
+        text-decoration: underline; /* Adiciona sublinhado */
+    }
+
+
+

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/site.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
 <body>
     <!-- Cabeçalho -->
     <header>
@@ -110,4 +112,49 @@
         <p><a href="#intro">Voltar ao topo</a></p>
     </footer>
 </body>
+
+<nav class="navbar">
+    <a href="#home" class="logo">Matheus Lima</a>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+</nav>
+<section id="about" class="reveal">
+    <h2>Sobre Mim</h2>
+    <p>Descrição sobre sua trajetória...</p>
+</section>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">Matheus' Portfólio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Privacy">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section id="experience" class="reveal">
+    <h2>Experiência Profissional</h2>
+    <!-- Cards de experiência -->
+</section>
+
 </html>

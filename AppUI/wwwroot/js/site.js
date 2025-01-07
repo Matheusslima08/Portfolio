@@ -93,4 +93,70 @@ function getIcon(type) {
         default:
             return "";
     }
+
+    // 1. Menu Responsivo (Hamburger Menu)
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+
+    // 2. Scroll Suave para os links do menu
+    const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // Ajusta o scroll para não sobrepor o header
+                    behavior: "smooth",
+                });
+            }
+            // Fechar o menu no mobile após clicar
+            navMenu.classList.remove("active");
+        });
+    });
+
+    // 3. ScrollReveal para animações ao rolar a página
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        revealElements.forEach((el) => {
+            const windowHeight = window.innerHeight;
+            const elementTop = el.getBoundingClientRect().top;
+            const revealPoint = 150;
+
+            if (elementTop < windowHeight - revealPoint) {
+                el.classList.add("active");
+            } else {
+                el.classList.remove("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    // 4. Botão "Voltar ao Topo"
+    const backToTopButton = document.querySelector(".back-to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+
 }
