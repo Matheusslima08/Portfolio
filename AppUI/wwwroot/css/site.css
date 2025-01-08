@@ -126,6 +126,12 @@ body {
         margin: 0 auto;
     }
 
+.imagem-notbook {
+    width: 82%; /* Ajusta a largura da imagem */
+    height: 25%; /* Mantém a proporção original */
+    margin-left: 195px;
+}
+
 .text-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
