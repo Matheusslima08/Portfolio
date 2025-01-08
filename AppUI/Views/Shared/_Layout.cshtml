@@ -3,65 +3,45 @@
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portfólio de Matheus Vinicius, desenvolvedor web Full Stack" />
+    <meta name="author" content="Matheus Vinicius" />
+    <meta property="og:description" content="Portfólio de Matheus Vinicius, desenvolvedor web Full Stack" />
+    <meta property="og:image" content="/assets/images/profile.png" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, c#, .net, github, fullstack" />
+    <meta name="robots" content="index, follow" />
+
     <title>@ViewData["Title"] - @_appSettings.AppName</title>
-   
-    <link rel="stylesheet" href="~/css/Skins/@skin" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/AppUI.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/datatables.net-dt/css/datatables.datatables.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/sweetalert2/sweetalert2.css" asp-append-version="true" />
-    
-    <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
-    <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.js" asp-append-version="true"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
-    <script src="~/lib/font-awesome/js/all.js" asp-append-version="true"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/lib/datatables.net/datatables.js" asp-append-version="true"></script>
-    <script src="~/lib/datatables.net-dt/js/datatables.datatables.js" asp-append-version="true"></script>
-    <script src="~/lib/sweetalert2/sweetalert2.js" asp-append-version="true"></script>
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-    
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
+    <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@_appSettings.AppName</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/about">Sobre</a></li>
+                <li><a href="/projects">Projetos</a></li>
+                <li><a href="/contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-            @RenderBody()
-        </main>
+    <main role="main">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - @_appSettings.AppName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+        <p>&copy; 2025 Matheus Vinicius. Todos os direitos reservados.</p>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

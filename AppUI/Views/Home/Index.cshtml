@@ -1,160 +1,135 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/site.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<script src="~/js/site.js" asp-append-version="true"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portfólio dinâmico e moderno de Matheus Vinicius, desenvolvedor web Full Stack" />
+    <meta name="author" content="Matheus Vinicius" />
+    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, c#, .net, github, fullstack" />
+    <meta name="robots" content="index, follow" />
 
+    <link rel="stylesheet" href="/css/site.css">
+    
+
+    <title>Portfólio Dinâmico - Matheus Vinicius</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+</head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>Meu Portfólio</h1>
-        </div>
-        <nav>
+    
+    <header class="header-dynamic">
+        <nav class="nav-bar">
+            <a href="#home" class="logo">Matheus Vinicius</a>
             <ul class="nav-links">
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
+                <li><a href="#knowledge">Conhecimentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <a href="resume.pdf" target="_blank" class="resume-btn">Baixar Currículo</a>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-    <!-- Seção de Introdução -->
-    <section id="experience" class="experience-section">
-        <h2>Experiência Profissional</h2>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Olá, eu sou <span>Matheus Vinicius</span></h1>
+                <p>Desenvolvedor Web Full Stack apaixonado por criar soluções incríveis.</p>
+                <a href="#contact" class="btn-primary">Fale comigo</a>
+            </div>
+            <div class="hero-image">
+                <img src="~/assets/Imagens/notebook-2.png"   />
+            </div>
+        </section>
 
-        <div class="experience-item">
-            <h3>Prefeitura do Recife</h3>
-            <span>Estagiário de TI | 04/2022 - 08/2022</span>
-            <p>
-                Desenvolvedor Front End atuando na elaboração de landing pages de sites dos clientes.
-                Realização de otimização da interface, atualização de conteúdo e manutenção de websites.
-            </p>
-            <p>
-                Contribuí na melhoria contínua da área de TI, criando e mantendo documentação técnica
-                e realizando manutenções preventivas/corretivas em equipamentos.
-            </p>
-        </div>
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="text-content">
+                    <h2>Sobre mim</h2>
+                    <p>Sou um desenvolvedor Full Stack com experiência em tecnologias modernas como HTML, CSS, JavaScript, C#, .NET e muito mais. Meu objetivo é criar experiências digitais que sejam funcionais e visualmente impressionantes.</p>
+                </div>
+                <div class="image-content">
+                    <img src="" alt="Imagem sobre Matheus" />
+                </div>
+            </div>
+        </section>
 
-        <div class="experience-item">
-            <h3>Jupiter Consultoria</h3>
-            <span>Freelancer | 02/2021 - 11/2021</span>
-            <p>
-                Atuei como desenvolvedor freelancer, contribuindo com soluções tecnológicas para pequenos negócios,
-                desde o planejamento até a entrega de projetos customizados.
-            </p>
-        </div>
-    </section>
+        <section id="projects" class="projects-section">
+            <h2>Projetos</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="/assets/Imagens/Screenshot_1.png" alt="Projeto 1" />
+                    <h3>Projeto 1</h3>
+                    <p>A Robótica para todos teve início em um projeto que surgiu no quarto período da faculdade de Ciência da Computação na UniFG, na matéria de Microcontroladores e IOT pela iniciativa dos alunos do professor Sidney Rodrigues. O projeto tem a ideia de trazer pessoas que não tem o alcance à cursos de programação para o mundo digital, visto que é uma área com grande demanda, em constante crescimento e poucos profissionais capacitados. Aqui na Robótica para todos nós disponibilizamos cursos gratuitos para todos de forma ordenada e dinâmica, onde o principal foco é formar desenvolvedores para área de automação e robótica. Porém, em segundo plano o projeto visa a formação de desenvolvedores fullstack..</p>
+                </div>
+                <div class="project-card">
+                    <img src="/assets/images/project2.png" alt="Projeto 2" />
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto 2.</p>
+                </div>
+                <div class="project-card">
+                    <img src="/assets/images/project3.png" alt="Projeto 3" />
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto 3.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Sobre Mim -->
-    <section id="about" class="portfolio-section">
-        <h2 class="section-title">Sobre Mim</h2>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxx.</p>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
-    </section>
+        <section id="knowledge" class="knowledge-section">
+            <h2>Conhecimentos</h2>
+            <div class="knowledge-cards">
+                <div class="card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Criação de estruturas semânticas e otimizadas para SEO.</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilização moderna e responsiva com animações.</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Funcionalidades interativas e dinâmicas para web.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Habilidades -->
-    <section id="skills" class="portfolio-section">
-        <h2 class="section-title">Habilidades</h2>
-        <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>HTML5 & CSS3</li>
-            <li>TypeScript</li>
-            <li>Git & GitHub</li>
-            <li>Bootstrap</li>
-            <li>SQL</li>
+        <section id="contact" class="contact-section">
+            <h2>Fale comigo!</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Matheus Vinicius. Todos os direitos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/Matheusslima08" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matheus-vinicius-4b725a1a3/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projects" class="portfolio-section">
-        <h2 class="section-title">Meus Projetos</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="img/project1.jpg" alt="Projeto 1">
-                <h3>Projeto 1: [PixKey-Generator]</h3>
-                <p>Descrição breve do projeto, as tecnologias usadas e o objetivo do projeto.</p>
-                <a href="https://github.com/Matheusslima08/PixKey-Generator" target="_blank">Ver no GitHub</a>
-            </div>
-            <div class="project-item">
-                <img src="img/project2.jpg" alt="Projeto 2">
-                <h3>Projeto 2: [API-Movies ]</h3>
-                <p>Descrição breve do projeto, as tecnologias usadas e o objetivo do projeto.</p>
-                <a href="https://github.com/Matheusslima08/API-Movies" target="_blank">Ver no GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="portfolio-section">
-        <h2 class="section-title">Entre em Contato</h2>
-        <p>Está interessado em trabalhar comigo ou quer conversar? Sinta-se à vontade para me contatar!</p>
-        <form action="https://formspree.io/f/seu-email" method="POST">
-            <input type="text" name="name" placeholder="Matheus Vinicius" required>
-            <input type="email" name="email" placeholder="matheusslima0802@gmail.com" required>
-            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 - Meu Portfólio | Criado por [Matheus Vinicius]</p>
-        <p><a href="#intro">Voltar ao topo</a></p>
     </footer>
+
+    <script src="~/js/site.js"></script>
 </body>
-
-<nav class="navbar">
-    <a href="#home" class="logo">Matheus Lima</a>
-    <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="nav-menu">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-    </ul>
-</nav>
-<section id="about" class="reveal">
-    <h2>Sobre Mim</h2>
-    <p>Descrição sobre sua trajetória...</p>
-</section>
-
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand" href="/">Matheus' Portfólio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Privacy">Privacy</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-<section id="experience" class="reveal">
-    <h2>Experiência Profissional</h2>
-    <!-- Cards de experiência -->
-</section>
-
 </html>

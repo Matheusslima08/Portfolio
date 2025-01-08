@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\assets\Imagens\celular-2.png" />
+    <None Include="wwwroot\assets\Imagens\css.png" />
+    <None Include="wwwroot\assets\Imagens\html.png" />
+    <None Include="wwwroot\assets\Imagens\js.png" />
+    <None Include="wwwroot\assets\Imagens\notebook-2-white.png" />
+    <None Include="wwwroot\assets\Imagens\notebook-2.png" />
+    <None Include="wwwroot\assets\Imagens\notebook.png" />
+    <None Include="wwwroot\assets\Imagens\vidro.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
