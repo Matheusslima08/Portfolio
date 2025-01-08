@@ -1,8 +1,3 @@
-﻿function showModal(id) {
-    var modal = document.getElementById(id);
-    modal.style.display = "flex";
-    modal.hidden = false;
-}
 
 function closeModal(id) {
     var modal = document.getElementById(id);
@@ -72,8 +67,6 @@ function showToast(type, message) {
             clearInterval(interval);
             removeToast(toast);
         }
-    }, 20);
-}
 
 function removeToast(toast) {
     toast.style.animation = "slideOut 0.5s forwards"; // Animação de saída
@@ -117,26 +110,12 @@ function getIcon(type) {
                     behavior: "smooth",
                 });
             }
-            // Fechar o menu no mobile após clicar
-            navMenu.classList.remove("active");
-        });
-    });
-
-    // 3. ScrollReveal para animações ao rolar a página
-    const revealElements = document.querySelectorAll(".reveal");
-
-    function revealOnScroll() {
-        revealElements.forEach((el) => {
-            const windowHeight = window.innerHeight;
-            const elementTop = el.getBoundingClientRect().top;
-            const revealPoint = 150;
 
             if (elementTop < windowHeight - revealPoint) {
                 el.classList.add("active");
             } else {
                 el.classList.remove("active");
             }
-        });
     }
 
     window.addEventListener("scroll", revealOnScroll);

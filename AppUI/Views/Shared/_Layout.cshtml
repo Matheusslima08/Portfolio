@@ -8,7 +8,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - @_appSettings.AppName</title>
-    <script type="importmap"></script>
    
     <link rel="stylesheet" href="~/css/Skins/@skin" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -49,46 +48,11 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                </div>
-            </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            <div id="toast-container"></div>
-
-            
-            <section class="portfolio-section">
-                <div class="text-center mb-4">
-                    <h1 class="display-4">Matheus Vinicius de Lima</h1>
-                    <p class="lead">Desenvolvedor Full Stack</p>
-                </div>
-
-                <div class="mb-5">
-                    <h2>Formação Acadêmica</h2>
-                    <p><strong>Bacharelado em Ciência da Computação</strong> - UNIFG, 2023.</p>
-                    <p>Foco em fundamentos de computação e aprendizado prático de diversas linguagens de programação.</p>
-                </div>
-
-                <div class="mb-5">
-                    <h2>Habilidades</h2>
-                    <ul>
-                        <li><strong>Front-end:</strong> HTML, CSS, JavaScript</li>
-                        <li><strong>Back-end:</strong> C#, .NET, Entity Framework</li>
-                        <li><strong>Bancos de Dados:</strong> SQL Server, MySQL</li>
-                        <li><strong>Conteinerização:</strong> Docker</li>
-                    </ul>
-                </div>
-
-                <div class="mb-5">
-                    <h2>Contato</h2>
-                    <p><strong>Email:</strong> <a href="mailto:Matheusslima0802@gmail.com">Matheusslima0802@gmail.com</a></p>
-                </div>
-            </section>
 
             @RenderBody()
         </main>
-    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
