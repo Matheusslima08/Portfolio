@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\Imagens\bbbce3d1-3efd-449b-8ff3-1102c95147ca.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\assets\Imagens\celular-2.png" />
     <None Include="wwwroot\assets\Imagens\css.png" />
     <None Include="wwwroot\assets\Imagens\html.png" />

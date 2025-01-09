@@ -13,35 +13,23 @@
     <meta property="og:description" content="Portfólio de Matheus Vinicius, desenvolvedor web Full Stack" />
     <meta property="og:image" content="/assets/images/profile.png" />
     <meta property="og:type" content="website" />
-    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, c#, .net, github, fullstack" />
+    <meta name="keywords" content="developer, programação, desenvolvedor, programador, html, css, javascript, c#, .net, Sql, Mysql, github, fullstack" />
     <meta name="robots" content="index, follow" />
 
     <title>@ViewData["Title"] - @_appSettings.AppName</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
-    <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+    <link rel="icon" type="image/png" href="/assets/icons/favicon.png" class="nav-links" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/projects">Projetos</a></li>
-                <li><a href="/contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <main role="main">
         @RenderBody()
     </main>
 
-    <footer>
-        <p>&copy; 2025 Matheus Vinicius. Todos os direitos reservados.</p>
-    </footer>
+    
 
-    <script src="/assets/js/main.js"></script>
+    <script src="~/js/site.js"></script>
 </body>
 </html>

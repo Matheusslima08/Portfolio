@@ -68,6 +68,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5rem 2rem;
+    margin-left: 10px;
     height: 100vh;
     color: #f4f4f9;
     text-align: left;
@@ -89,9 +90,12 @@ body {
     color: #d1d1d1;
 }
 
-.hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
+.imagem-notbook {
+    width: 65%; /* Ajusta a largura da imagem */
+    height: 95%; /* Mantém a proporção original */
+    margin-left: 400px;
+    margin-top: 150px;
+    color: #d1d1d1;
 }
 
 /* Botão Principal */
@@ -126,11 +130,7 @@ body {
         margin: 0 auto;
     }
 
-.imagem-notbook {
-    width: 82%; /* Ajusta a largura da imagem */
-    height: 25%; /* Mantém a proporção original */
-    margin-left: 195px;
-}
+
 
 .text-content h2 {
     font-size: 2.5rem;
