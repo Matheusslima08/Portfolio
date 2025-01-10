@@ -73,6 +73,14 @@ body {
     color: #f4f4f9;
     text-align: left;
 }
+body {
+    background-color: white;
+    color: black;
+}
+body {
+    background-color: black;
+    color: white;
+}
 
 .hero-content h1 {
     font-size: 3rem;

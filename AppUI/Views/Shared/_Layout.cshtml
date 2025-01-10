@@ -22,12 +22,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
     <link rel="icon" type="image/png" href="/assets/icons/favicon.png" class="nav-links" />
 </head>
+
+<head>
+    <link rel="stylesheet" asp-append-version="true"
+          href="~/css/@((string)ViewData["Theme"]).css">
+</head>
+
 <body>
 
     <main role="main">
         @RenderBody()
     </main>
-
+    <form method="post" asp-controller="Theme" asp-action="ChangeTheme">
+        <select name="selectedTheme" onchange="this.form.submit()">
+            <option value="light" selected>Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </form>
     
 
     <script src="~/js/site.js"></script>
