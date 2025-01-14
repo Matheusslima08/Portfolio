@@ -37,5 +37,15 @@ namespace Domain
 
             return connection;
         }
+
+        public List<string>? GetAvailableSkins()
+        {
+            return _AppSettings.AvailableSkins;
+        }
+
+        public void AlterSkin(string skin)
+        {
+            _AppSettings.Skin = skin;
+        }
     }
 }

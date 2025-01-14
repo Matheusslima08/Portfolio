@@ -1,8 +1,4 @@
-﻿@{
-    string skin = $"{_appSettings.Skin}.css";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
@@ -17,15 +13,11 @@
     <meta name="robots" content="index, follow" />
 
     <title>@ViewData["Title"] - @_appSettings.AppName</title>
-
+    <link rel="stylesheet" href="~/css/Skins/@(_appSettings.Skin).css">
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
     <link rel="icon" type="image/png" href="/assets/icons/favicon.png" class="nav-links" />
-</head>
-
-<head>
-    <link rel="stylesheet" asp-append-version="true"
-          href="~/css/@((string)ViewData["Theme"]).css">
 </head>
 
 <body>
@@ -33,14 +25,28 @@
     <main role="main">
         @RenderBody()
     </main>
-    <form method="post" asp-controller="Theme" asp-action="ChangeTheme">
+    <form method="post" asp-controller="Home" asp-action="AlterTheme">
         <select name="selectedTheme" onchange="this.form.submit()">
-            <option value="light" selected>Light</option>
-            <option value="dark">Dark</option>
+            @foreach(string skin in _appSettings.AvailableSkins){
+                if(skin == _appSettings.Skin){
+                    <option value="@skin" selected>@skin</option>
+                }
+                else{
+                    <option value="@skin">@skin</option>
+                }
+            }
         </select>
     </form>
-    
+    <footer class="footer">
+        <p>&copy; 2025 Matheus Vinicius. Todos os direitos reservados.</p>
+        <ol class="social-links">
+            <li><a href="https://github.com/Matheusslima08" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matheus-vinicius-4b725a1a3/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ol>
+    </footer>
+
 
     <script src="~/js/site.js"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
 </body>
 </html>

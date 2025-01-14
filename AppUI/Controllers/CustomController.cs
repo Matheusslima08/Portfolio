@@ -73,7 +73,12 @@ namespace AppUI.Controllers
 
 
         #region Loaders
-
+        [HttpPost]
+        public IActionResult AlterTheme(string selectedTheme)
+        {
+            _utils.AlterSkin(selectedTheme);
+            return RedirectToAction("Index");
+        }
         #endregion
     }
 }

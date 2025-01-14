@@ -1,150 +1,116 @@
-﻿<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Portfólio dinâmico e moderno de Matheus Vinicius, desenvolvedor web Full Stack" />
-    <meta name="author" content="Matheus Vinicius" />
-    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, c#, .net, github, fullstack" />
-    <meta name="robots" content="index, follow" />
-
-    <link rel="stylesheet" href="/css/site.css">
-    
-
-    <title>Portfólio Dinâmico - Matheus Vinicius</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
-</head>
-<body>
-    
-    <header class="header-dynamic">
-        <nav class="nav-bar">
-            <a href="#home" class="logo"></a>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#knowledge">Conhecimentos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Abrir Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Olá, eu sou <span>Matheus Vinicius</span></h1>
-                <p>Desenvolvedor Web Full Stack apaixonado por criar soluções incríveis.</p>
-                <a href="#contact" class="btn-primary">Fale comigo</a>
-            </div>
-            <div class="hero-image">
-                <img src="~/assets/Imagens/fancyai_1736452322155.png" alt="imagem notbook" class="imagem-notbook" />
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="text-content">
-                    <h2>Sobre mim</h2>
-                    <p>Sou um desenvolvedor Full Stack com experiência em tecnologias modernas como HTML, CSS, JavaScript, C#, .NET e muito mais. Meu objetivo é criar experiências digitais que sejam funcionais e visualmente impressionantes.</p>
-                </div>
-                <div class="image-content">
-                    <img src="~/assets/Imagens/83069a76-853b-4faf-9015-676871ea5821.jpg" alt="Imagem sobre Matheus" />
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <h2>Projetos</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="/assets/Imagens/Screenshot_1.png" alt="Projeto 1" />
-                    <h3>Projeto 1</h3>
-                    <p>A Robótica para todos teve início em um projeto que surgiu no quarto período da faculdade de Ciência da Computação na UniFG, na matéria de Microcontroladores e IOT pela iniciativa dos alunos do professor Sidney Rodrigues. O projeto tem a ideia de trazer pessoas que não tem o alcance à cursos de programação para o mundo digital.</p>
-                </div>
-                <div class="project-card">
-                    <img src="~/assets/Imagens/Screenshot_2.png" alt="Projeto 2" />
-                    <h3>Projeto 2</h3>
-                    <p>Este projeto foi desenvolvido em C# com o objetivo de criar um sistema capaz de gerar uma chave PIX aleatória.O PIX é um identificador único utilizado para realizar transações. O gerador criado oferece uma solução simples e eficaz para a criação de chaves aleatórias, permitindo que o usuário utilize a chave gerada para fins de teste, simulação ou implementações de sistemas de pagamento.</p>
-                </div>
-                <div class="project-card">
-                    <img src="/assets/Imagens/Projeto.png" alt="Projeto 3" />
-                    <h3>API-Movies </h3>
-                    <p>A Filmes API é uma aplicação backend desenvolvida em .NET Core com C#, projetada para gerenciar informações relacionadas a cinemas, filmes, endereços e sessões de forma eficiente. O projeto utiliza Entity Framework Core para integração com o banco de dados, garantindo facilidade de manipulação dos dados e escalabilidade.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="knowledge" class="knowledge-section">
-            <h2>Conhecimentos</h2>
-            <div class="knowledge-cards">
-                <div class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Criação de estruturas semânticas e otimizadas para SEO.</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Estilização moderna e responsiva com animações.</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <p>Funcionalidades interativas e dinâmicas para web.</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>C#</h3>
-                    <p>Desenvolvimento robusto de aplicações com foco em orientação a objetos e versatilidade.</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>SQL</h3>
-                    <p>Gerenciamento eficiente de bancos de dados relacionais com suporte a consultas avançadas, alta performance.</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>MYSQL</h3>
-                    <p>Sistema de gerenciamento de bancos de dados relacional, leve e altamente escalável.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Fale comigo!</h2>
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" placeholder="Seu nome" required />
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Seu email" required />
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 Matheus Vinicius. Todos os direitos reservados.</p>
-        <ul class="social-links">
-            <li><a href="https://github.com/Matheusslima08" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/matheus-vinicius-4b725a1a3/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+﻿<header class="header-dynamic">
+    <nav class="nav-bar">
+        <a href="#home" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#knowledge">Conhecimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
         </ul>
-    </footer>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
 
-    <script src="~/js/site.js"></script>
-</body>
-</html>
+<div>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span>Matheus Vinicius</span></h1>
+            <p>Desenvolvedor Web Full Stack apaixonado por criar soluções incríveis.</p>
+            <a href="#contact" class="btn-primary">Fale comigo</a>
+        </div>
+        <div class="hero-image">
+            <img src="~/assets/Imagens/fancyai_1736452322155.png" alt="imagem notbook" class="imagem-notbook" />
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Sobre mim</h2>
+                <p>Sou um desenvolvedor Full Stack com experiência em tecnologias modernas como HTML, CSS, JavaScript, C#, .NET e muito mais. Meu objetivo é criar experiências digitais que sejam funcionais e visualmente impressionantes.</p>
+            </div>
+            <div class="image-content">
+                <img src="~/assets/Imagens/83069a76-853b-4faf-9015-676871ea5821.jpg" alt="Imagem sobre Matheus" />
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/assets/Imagens/Screenshot_1.png" alt="Projeto 1" />
+                <h3>Projeto 1</h3>
+                <p>A Robótica para todos teve início em um projeto que surgiu no quarto período da faculdade de Ciência da Computação na UniFG, na matéria de Microcontroladores e IOT pela iniciativa dos alunos do professor Sidney Rodrigues. O projeto tem a ideia de trazer pessoas que não tem o alcance à cursos de programação para o mundo digital.</p>
+            </div>
+            <div class="project-card">
+                <img src="~/assets/Imagens/Screenshot_2.png" alt="Projeto 2" />
+                <h3>Projeto 2</h3>
+                <p>Este projeto foi desenvolvido em C# com o objetivo de criar um sistema capaz de gerar uma chave PIX aleatória.O PIX é um identificador único utilizado para realizar transações. O gerador criado oferece uma solução simples e eficaz para a criação de chaves aleatórias, permitindo que o usuário utilize a chave gerada para fins de teste, simulação ou implementações de sistemas de pagamento.</p>
+            </div>
+            <div class="project-card">
+                <img src="/assets/Imagens/Projeto.png" alt="Projeto 3" />
+                <h3>API-Movies </h3>
+                <p>A Filmes API é uma aplicação backend desenvolvida em .NET Core com C#, projetada para gerenciar informações relacionadas a cinemas, filmes, endereços e sessões de forma eficiente. O projeto utiliza Entity Framework Core para integração com o banco de dados, garantindo facilidade de manipulação dos dados e escalabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="knowledge" class="knowledge-section">
+        <h2>Conhecimentos</h2>
+        <div class="knowledge-cards">
+            <div class="card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Criação de estruturas semânticas e otimizadas para SEO.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Estilização moderna e responsiva com animações.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Funcionalidades interativas e dinâmicas para web.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-html5"></i>
+                <h3>C#</h3>
+                <p>Desenvolvimento robusto de aplicações com foco em orientação a objetos e versatilidade.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-html5"></i>
+                <h3>SQL</h3>
+                <p>Gerenciamento eficiente de bancos de dados relacionais com suporte a consultas avançadas, alta performance.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-html5"></i>
+                <h3>MYSQL</h3>
+                <p>Sistema de gerenciamento de bancos de dados relacional, leve e altamente escalável.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Fale comigo!</h2>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+    </section>
+</div>
+

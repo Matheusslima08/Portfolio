@@ -5,6 +5,7 @@
         public string? AppName { get; set; }
         public double? AppVersion { get; set; }
         public string? Skin { get; set; } = "light";
+        public List<string>? AvailableSkins { get; set; }
         public List<DataBaseConnectionModel>? DataBaseConnections { get; set; }
         public List<ApiConnectionModel>? ApiConnections { get; set; }
 
